@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div id="game-screen">
+        <div id="sentence-kanji" class="kanji"></div>
+        <div id="sentence-kana" class="kana"></div>
+
+        <div class="romaji">
+            <span id="typed"></span><span id="untyped"></span>
+        </div>
+
+        <div class="info">
+            <span>ミス: <span id="miss">0</span></span>
+        </div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+        <h2>結果</h2>
+        <p id="time"></p>
+        <p id="score"></p>
+        <p id="miss-result"></p>
+        <button onclick="location.reload()">もう一度</button>
+    </div>
+
+    <div id="start">キーを押してスタート</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
